@@ -1,0 +1,12 @@
+diff --git a/uvc-gadget-master/uvc-gadget.c b/uvc-gadget-master/uvc-gadget.c
+index 9971183..d641c4d 100644
+--- a/uvc-gadget-master/uvc-gadget.c
++++ b/uvc-gadget-master/uvc-gadget.c
+@@ -2057,6 +2057,7 @@ static void usage(const char *argv0)
+ 
+ int main(int argc, char *argv[])
+ {
++	printf("test\n");
+     struct uvc_device *udev;
+     struct v4l2_device *vdev;
+     struct timeval tv;
