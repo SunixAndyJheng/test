@@ -2058,6 +2058,7 @@ static void usage(const char *argv0)
 int main(int argc, char *argv[])
 {
 	printf("test\n");
+	int a = a + 1;
     struct uvc_device *udev;
     struct v4l2_device *vdev;
     struct timeval tv;

@@ -1,0 +1,44 @@
+From 25894806e52b1d4be186a33abe11ea4cbfddc243 Mon Sep 17 00:00:00 2001
+From: AndyJheng <andy_jheng@sunix.com>
+Date: Wed, 18 Mar 2026 17:15:43 +0800
+Subject: [PATCH] apply patch
+
+---
+ uvc-gadget-master/my.patch     | 12 ++++++++++++
+ uvc-gadget-master/uvc-gadget.c |  1 +
+ 2 files changed, 13 insertions(+)
+ create mode 100644 uvc-gadget-master/my.patch
+
+diff --git a/uvc-gadget-master/my.patch b/uvc-gadget-master/my.patch
+new file mode 100644
+index 0000000..1d7343c
+--- /dev/null
++++ b/uvc-gadget-master/my.patch
+@@ -0,0 +1,12 @@
++diff --git a/uvc-gadget-master/uvc-gadget.c b/uvc-gadget-master/uvc-gadget.c
++index 9971183..d641c4d 100644
++--- a/uvc-gadget-master/uvc-gadget.c
+++++ b/uvc-gadget-master/uvc-gadget.c
++@@ -2057,6 +2057,7 @@ static void usage(const char *argv0)
++ 
++ int main(int argc, char *argv[])
++ {
+++	printf("test\n");
++     struct uvc_device *udev;
++     struct v4l2_device *vdev;
++     struct timeval tv;
+diff --git a/uvc-gadget-master/uvc-gadget.c b/uvc-gadget-master/uvc-gadget.c
+index 9971183..d641c4d 100644
+--- a/uvc-gadget-master/uvc-gadget.c
++++ b/uvc-gadget-master/uvc-gadget.c
+@@ -2057,6 +2057,7 @@ static void usage(const char *argv0)
+ 
+ int main(int argc, char *argv[])
+ {
++	printf("test\n");
+     struct uvc_device *udev;
+     struct v4l2_device *vdev;
+     struct timeval tv;
+-- 
+2.25.1
+
